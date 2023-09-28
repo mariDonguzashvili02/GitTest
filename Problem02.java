@@ -21,5 +21,17 @@ public class Problem02 extends Karel {
 		
 		move();
 		
+		putBeeper();
+		putBeeper();
+		putBeeper();
+		putBeeper();
+		putBeeper();
+		putBeeper();
+		putBeeper();
+		putBeeper();
+		putBeeper();
+		putBeeper();
+		
+		
 	}
 }
