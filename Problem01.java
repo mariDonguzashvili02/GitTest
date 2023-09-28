@@ -5,8 +5,12 @@ public class Problem01 extends Karel {
 //	გადაიტანოს 4x1 უჯრაზე და დაამთავროს მუშაობა.
 	
 	public void run(){
+		move();
+		move();
+		pickBeeper();
 		
 		
+
 		
 	}	
 }
