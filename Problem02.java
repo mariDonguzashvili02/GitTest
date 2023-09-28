@@ -3,34 +3,45 @@ import stanford.karel.Karel;
 //ბრილიანტი უნდა გადაიტანოს 6x1 უჯრაზე.
 public class Problem02 extends Karel {
 	public void run(){
-		move();
-		move();
-		move();
+		
+		for(int i = 0; i<4; i++){
+			move();
+		}
+		
+//		move();
+//		move();
+//		move();
+//		move();
+		
+		for(int i = 0; i < 10; i++){
+			pickBeeper();
+		}
+//		pickBeeper();
+//		pickBeeper();
+//		pickBeeper();
+//		pickBeeper();
+//		pickBeeper();
+//		pickBeeper();
+//		pickBeeper();
+//		pickBeeper();
+//		pickBeeper();
+//		pickBeeper();
+		
 		move();
 		
-		pickBeeper();
-		pickBeeper();
-		pickBeeper();
-		pickBeeper();
-		pickBeeper();
-		pickBeeper();
-		pickBeeper();
-		pickBeeper();
-		pickBeeper();
-		pickBeeper();
-		
-		move();
-		
-		putBeeper();
-		putBeeper();
-		putBeeper();
-		putBeeper();
-		putBeeper();
-		putBeeper();
-		putBeeper();
-		putBeeper();
-		putBeeper();
-		putBeeper();
+		for(int i = 0; i < 10; i++){
+			putBeeper();
+		}
+//		putBeeper();
+//		putBeeper();
+//		putBeeper();
+//		putBeeper();
+//		putBeeper();
+//		putBeeper();
+//		putBeeper();
+//		putBeeper();
+//		putBeeper();
+//		putBeeper();
 		
 		
 	}
