@@ -8,9 +8,9 @@ public class Problem01 extends Karel {
 		move();
 		move();
 		pickBeeper();
-		
-		
+		move();
+		putBeeper();
 
-		
+
 	}	
 }
