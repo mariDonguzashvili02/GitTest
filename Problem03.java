@@ -3,7 +3,7 @@ import stanford.karel.Karel;
 //სამყაროს ზომა არ იცით. თქვენი პროგრამა უნდა მუშაობდეს ნებისმიერი ზომის
 //სამყაროსათვის.
 public class Problem03 extends Karel {
-	public void Run(){
+	public void run(){
 		while(frontIsClear()){
 			
 			move();
