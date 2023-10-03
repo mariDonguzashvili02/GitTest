@@ -15,6 +15,10 @@ public class Problem07 extends Karel{
 			else{
 				move();
 			}
+			
+
+			}
+		
 			if(frontIsBlocked()){	
 				if(noBeepersPresent()){
 				putBeeper();
@@ -25,11 +29,7 @@ public class Problem07 extends Karel{
 				turnLeft();
 				move();
 				turnLeft();
-			}
-
-			}
-		
-				
+			}	
 		
 			fillTheRow();
 		}
