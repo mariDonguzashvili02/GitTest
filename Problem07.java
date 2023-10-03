@@ -26,13 +26,13 @@ public class Problem07 extends Karel{
 				move();
 			}
 			if(frontIsBlocked()){
-				if(facingEast()){
+				if(facingWest()){
 				putBeeper();
 				turnLeft();
 				move();
 				turnLeft();
 				}
-				if(facingWest()){
+				if(facingEast()){
 					putBeeper();
 					turnRight();
 					move();
@@ -46,12 +46,12 @@ public class Problem07 extends Karel{
 				
 			}
 			if(frontIsBlocked()){
-				if(facingEast()){
+				if(facingWest()){
 				turnLeft();
 				move();
 				turnLeft();
 				}
-				if(facingWest()){
+				if(facingEast()){
 					turnRight();
 					move();
 					turnRight();
