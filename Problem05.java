@@ -22,7 +22,7 @@ public class Problem05 extends Karel{
 		if (frontIsBlocked()){
 			if(noBeepersPresent()){
 				putBeeper();
-				facingNorth();
+				turnLeft();
 				move();
 				
 			}
