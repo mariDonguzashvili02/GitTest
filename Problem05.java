@@ -16,32 +16,20 @@ public class Problem05 extends Karel{
 			if(beepersPresent()){
 				move();
 			}
-			if (frontIsBlocked()){
-				if(noBeepersPresent()){
-					putBeeper();
-					turnLeft();
-					move();
-					
-				}
-				if(beepersPresent()){
-					facingNorth();
-					move();
-				}
+			
+		}
+		if (frontIsBlocked()){
+			if(noBeepersPresent()){
+				putBeeper();
+				turnLeft();
+				move();
+				
+			}
+			if(beepersPresent()){
+				facingNorth();
+				move();
 			}
 		}
-		
-//		if (frontIsBlocked()){
-//			if(noBeepersPresent()){
-//				putBeeper();
-//				turnLeft();
-//				move();
-//				
-//			}
-//			if(beepersPresent()){
-//				facingNorth();
-//				move();
-//			}
-//		}
 	}
 
 }
