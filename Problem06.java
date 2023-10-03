@@ -8,7 +8,7 @@ public class Problem06 extends Karel {
 		move();
 		collectBeepers();
 		collectBeepers();
-		while(noBeepersInBag()){
+		while(beepersInBag()){
 			putBeeper();
 		}
 		
