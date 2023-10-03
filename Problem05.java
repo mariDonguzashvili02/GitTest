@@ -11,13 +11,24 @@ public class Problem05 extends Karel{
 				putBeeper();
 				move();
 				
-				
 			}
 			
 			if(beepersPresent()){
 				move();
 			}
 			
+		}
+		while(frontIsBlocked()){
+			if(noBeepersPresent()){
+				putBeeper();
+				facingNorth();
+				move();
+				
+			}
+			if(beepersPresent()){
+				facingNorth();
+				move();
+			}
 		}
 	}
 
