@@ -33,12 +33,12 @@ public class Problem07 extends Karel{
 		while(frontIsBlocked()){
 			if(noBeepersPresent()){
 				putBeeper();
-				
+				if(facingEast()){
 				turnLeft();
 				move();
 				turnLeft();
 			
-				
+				}
 				if(facingWest()){
 					turnRight();
 					move();
