@@ -7,54 +7,33 @@ import stanford.karel.Karel;
 public class Problem07 extends Karel{
 	public void run(){
 		while (beepersInBag()){
+//			next line exists
+//			go to next line start position
+			goToNextLineStart();
+//			fill line
+			fillLine();
 			
-			while (facingEast()){
-				fillTheRow();
-				
-			}
-			while(facingWest()){
-				fillTheRow();
-				
-			}
-		
 		}
+		
 	}
-	private void fillTheRow(){
-		while (frontIsClear()){
+
+	private void fillLine() {
+		if (noBeepersPresent()){
+			putBeeper();
+		}
+		while(frontIsClear()){
+			move();
 			if(noBeepersPresent()){
 				putBeeper();
-				move();
-			}
-			if(beepersPresent()){
-				move();
-				
 			}
 		}
-		while(frontIsBlocked()){
-			if(noBeepersPresent()){
-				putBeeper();
-				if(facingEast()){
-				turnLeft();
-				move();
-				turnLeft();
-			
-				}
-				if(facingWest()){
-					turnRight();
-					move();
-					turnRight();
-				}
-				
-			}
-			}
-		
+	}
+
+	private void goToNextLineStart() {
+		// TODO Auto-generated method stub
 		
 	}
-	private void turnRight(){
-		turnLeft();
-		turnLeft();
-		turnLeft();
-	}
+	
 
 }
 	
