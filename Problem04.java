@@ -4,13 +4,11 @@ import stanford.karel.Karel;
 //სამყაროში ბრილიანტები არსად არ დევს.
 public class Problem04 extends Karel{
 	public void run(){
+		putBeeper();
 		while(frontIsClear()){
-			putBeeper();
 			move();
-			
+			putBeeper();
 		}
-		if(frontIsBlocked()){
-				putBeeper();
-		}
+		
 	}
 }
