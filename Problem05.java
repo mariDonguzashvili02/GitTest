@@ -18,7 +18,8 @@ public class Problem05 extends Karel{
 			}
 			
 		}
-		while(frontIsBlocked()){
+		
+		if (frontIsBlocked()){
 			if(noBeepersPresent()){
 				putBeeper();
 				facingNorth();

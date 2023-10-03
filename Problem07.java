@@ -17,7 +17,7 @@ public class Problem07 extends Karel{
 			
 
 		}
-		while (frontIsBlocked()){
+		
 			if(noBeepersPresent()){
 				putBeeper();
 				facingNorth();
@@ -28,7 +28,7 @@ public class Problem07 extends Karel{
 			move();
 			turnLeft();
 			
-		}
+		
 		fillTheRow();
 	}
 	private void fillTheRow(){
