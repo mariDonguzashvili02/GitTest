@@ -39,7 +39,7 @@ public class Problem07 extends Karel{
 				turnLeft();
 			
 				}
-				if(facingEast()&&facingSouth()){
+				if(facingWest()){
 					putBeeper();
 					turnRight();
 					move();
