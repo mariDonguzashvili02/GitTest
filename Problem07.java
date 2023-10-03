@@ -6,6 +6,7 @@ import stanford.karel.Karel;
 //თქვენი პროგრამა უნდა მუშაობდეს ნებისმიერი ზომის სამყაროსათვის.
 public class Problem07 extends Karel{
 	public void run(){
+		while (beepersInBag()){
 		while (frontIsClear()){
 			if(noBeepersPresent()){
 				putBeeper();
@@ -31,6 +32,7 @@ public class Problem07 extends Karel{
 		}	
 		
 		fillTheRow();
+		}
 	}
 	private void fillTheRow(){
 		while (frontIsClear()){
