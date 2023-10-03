@@ -5,7 +5,7 @@ import stanford.karel.Karel;
 //ბრილიანტი დევს.
 public class Problem05 extends Karel{
 	public void run(){
-		while(leftIsClear()){
+		while(frontIsClear()){
 			
 			if(noBeepersPresent()){
 				putBeeper();
@@ -18,7 +18,7 @@ public class Problem05 extends Karel{
 			}
 			
 		}
-		while(leftIsBlocked()){
+		while(frontIsBlocked()){
 			if(noBeepersPresent()){
 				putBeeper();
 				facingNorth();
