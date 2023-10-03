@@ -7,17 +7,9 @@ import stanford.karel.Karel;
 public class Problem07 extends Karel{
 	public void run(){
 		while (beepersInBag()){
-			while (frontIsClear()){
-			if(noBeepersPresent()){
-				putBeeper();
-				move();
-			}
-			else{
-				move();
-			}
+			fillTheRow();
 			
-
-			}
+			
 		
 			if(frontIsBlocked()){	
 				if(noBeepersPresent()){
