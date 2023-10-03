@@ -19,7 +19,23 @@ public class Problem07 extends Karel{
 		}
 		while (frontIsBlocked()){
 			turnLeft();
+			move();
+			turnLeft();
 			
+		}
+		fillTheRow();
+	}
+	private void fillTheRow(){
+		while (frontIsClear()){
+			if(noBeepersPresent()){
+				putBeeper();
+				move();
+			}
+			else{
+				move();
+			}
+			
+
 		}
 	}
 
