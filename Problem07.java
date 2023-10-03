@@ -8,20 +8,35 @@ public class Problem07 extends Karel{
 	public void run(){
 		while (beepersInBag()){
 			fillTheRow();
-			
-			
-		
-			if(frontIsBlocked()){	
-				if(noBeepersPresent()){
-				putBeeper();
-				facingNorth();
-				move();
+			while (facingEast()){
+				fillTheRow();
+				if(frontIsBlocked()){	
+					if(noBeepersPresent()){
+					putBeeper();
+					facingNorth();
+					move();
+					
+					}
+					turnLeft();
+					move();
+					turnLeft();
+				}	
+			}
+			while(facingWest()){
+				fillTheRow();
+				if(frontIsBlocked()){	
+					if(noBeepersPresent()){
+					putBeeper();
+					facingNorth();
+					move();
+					
+					}
+					turnRight();
+					move();
+					turnRight();
+				}	
+			}
 				
-				}
-				turnLeft();
-				move();
-				turnLeft();
-			}	
 		
 			fillTheRow();
 		}
@@ -38,6 +53,11 @@ public class Problem07 extends Karel{
 			
 
 		}
+	}
+	private void turnRight(){
+		turnLeft();
+		turnLeft();
+		turnLeft();
 	}
 
 }
