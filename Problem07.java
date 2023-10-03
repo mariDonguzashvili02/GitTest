@@ -7,7 +7,7 @@ import stanford.karel.Karel;
 public class Problem07 extends Karel{
 	public void run(){
 		while (beepersInBag()){
-			fillTheRow();
+			
 			while (facingEast()){
 				fillTheRow();
 				
@@ -20,42 +20,32 @@ public class Problem07 extends Karel{
 		}
 	}
 	private void fillTheRow(){
-		while (noBeepersPresent()){
-			if(frontIsClear()){
+		while (frontIsClear()){
+			if(noBeepersPresent()){
 				putBeeper();
 				move();
 			}
-			if(frontIsBlocked()){
+		}
+		while(frontIsBlocked()){
+			if(noBeepersPresent()){
 				if(facingEast()){
 				putBeeper();
 				turnLeft();
 				move();
-				
+				turnLeft();
+			
 				}
-				if(facingWest()){
+				if(facingSouth()){
 					putBeeper();
 					turnRight();
 					move();
-					
+					turnRight();
 				}
-			}
-		}
-		while(beepersPresent()){
-			if(frontIsClear()){
-				move();
 				
 			}
-			if(frontIsBlocked()){
-				if(facingEast()){
-				turnLeft();
-				move();
-				}
-				if(facingWest()){
-					turnRight();
-					move();
-				}
 			}
-		}
+		
+		
 	}
 	private void turnRight(){
 		turnLeft();
@@ -64,3 +54,5 @@ public class Problem07 extends Karel{
 	}
 
 }
+	
+
