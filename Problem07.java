@@ -30,7 +30,20 @@ public class Problem07 extends Karel{
 	}
 
 	private void goToNextLineStart() {
-		// TODO Auto-generated method stub
+		turnLeft();
+		move();
+		turnLeft();
+		while(frontIsClear()){
+			move();
+		}
+		turnAround();
+		
+		
+	}
+
+	private void turnAround() {
+		turnLeft();
+		turnLeft();
 		
 	}
 	
