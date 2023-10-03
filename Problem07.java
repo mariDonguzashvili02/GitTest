@@ -10,48 +10,38 @@ public class Problem07 extends Karel{
 			fillTheRow();
 			while (facingEast()){
 				fillTheRow();
-				if(frontIsBlocked()){	
-					if(noBeepersPresent()){
-					putBeeper();
-					facingNorth();
-					move();
-					
-					}
-					turnLeft();
-					move();
-					turnLeft();
-				}	
+				
 			}
 			while(facingWest()){
 				fillTheRow();
-				if(frontIsBlocked()){	
-					if(noBeepersPresent()){
-					putBeeper();
-					facingNorth();
-					move();
-					
-					}
-					turnRight();
-					move();
-					turnRight();
-				}	
-			}
 				
+			}
 		
-			fillTheRow();
 		}
 	}
 	private void fillTheRow(){
-		while (frontIsClear()){
-			if(noBeepersPresent()){
+		while (noBeepersPresent()){
+			if(frontIsClear()){
 				putBeeper();
 				move();
 			}
-			else{
+			if(frontIsBlocked()){
+				putBeeper();
+				turnLeft();
 				move();
+				turnLeft();
 			}
-			
-
+		}
+		while(beepersPresent()){
+			if(frontIsClear()){
+				move();
+				
+			}
+			if(frontIsBlocked()){
+				turnLeft();
+				move();
+				turnLeft();
+			}
 		}
 	}
 	private void turnRight(){
