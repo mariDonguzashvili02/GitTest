@@ -22,6 +22,20 @@ public class Problem08 extends Karel {
 			move();
 			move();
 		}
+		turnAround();
+		move();
+		turnAround();
+		while(beepersPresent()){
+			pickBeeper();
+			move();
+			move();
+			putBeeper();
+			turnAround();
+			move();
+			move();
+			turnAround();
+			
+		}
 	}
 	private void turnAround(){
 		turnLeft();
