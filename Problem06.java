@@ -13,7 +13,6 @@ public class Problem06 extends Karel {
 			turnLeft();
 			turnLeft();
 			turnLeft();
-			turnLeft();
 			move();
 			move();
 		}
