@@ -26,6 +26,8 @@ public class Problem06 extends Karel {
 			turnLeft();
 			turnLeft();
 			move();
+			turnLeft();
+			turnLeft();
 		}
 	}	
 }
