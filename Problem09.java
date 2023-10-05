@@ -4,6 +4,7 @@ import stanford.karel.Karel;
 //კარელს ჩანთაში უსასრულო რაოდენობის ბრილიანტი აქვს.
 public class Problem09 extends Karel{
 	public void run(){
+		move();
 		
 	}
 
