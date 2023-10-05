@@ -5,6 +5,20 @@ import stanford.karel.Karel;
 public class Problem09 extends Karel{
 	public void run(){
 		move();
+		puttingOneSetOfBeepers();
+		turnLeft();
+		move();
+		while(beepersPresent()){
+			pickBeeper();
+			turnLeft();
+			move();
+			putBeeper();
+			turnLeft();
+		}
+		
+	}
+	
+	private void puttingOneSetOfBeepers(){
 		while(beepersPresent()){
 			pickBeeper();
 			turnAround();
@@ -29,10 +43,10 @@ public class Problem09 extends Karel{
 				
 			}
 			
+			
 		}
+		
 	}
-	
-
 	private void turnAround(){
 		turnLeft();
 		turnLeft();
