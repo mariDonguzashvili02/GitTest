@@ -13,7 +13,9 @@ public class Problem09 extends Karel{
 			turnAround();
 			move();
 			putBeeper();
-			turnLeft();
+			turnAround();
+			move();
+			
 		}
 		
 	}
