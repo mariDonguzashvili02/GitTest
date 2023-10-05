@@ -5,7 +5,33 @@ import stanford.karel.Karel;
 public class Problem09 extends Karel{
 	public void run(){
 		move();
-		
+		multiplyBeepers();
+		move();
+	}
+	private void multiplyBeepers(){
+		if(beepersPresent()){
+			pickBeeper();
+			move();
+			putBeeper();
+			turnAround();
+			move();
+			turnAround();
+		}
+		if(beepersPresent()){
+			pickBeeper();
+			turnAround();
+			move();
+			putBeeper();
+			turnAround();
+			move();
+			turnAround();
+			
+		}
 	}
 
+	private void turnAround(){
+		turnLeft();
+		turnLeft();
+		
+	}
 }
