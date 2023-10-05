@@ -8,15 +8,13 @@ public class Problem09 extends Karel{
 		puttingOneSetOfBeepers();
 		turnLeft();
 		move();
-		while(beepersPresent()){
-			pickBeeper();
-			turnAround();
-			move();
-			putBeeper();
-			turnAround();
-			move();
-			
-		}
+		puttingBeepersBack();
+		turnLeft();
+		move();
+		turnLeft();
+		move();
+		turnLeft();
+		
 		
 	}
 	
@@ -53,5 +51,16 @@ public class Problem09 extends Karel{
 		turnLeft();
 		turnLeft();
 		
+	}
+	private void puttingBeepersBack(){
+		while(beepersPresent()){
+			pickBeeper();
+			turnAround();
+			move();
+			putBeeper();
+			turnAround();
+			move();
+			
+		}
 	}
 }
