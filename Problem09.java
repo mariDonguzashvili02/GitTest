@@ -4,8 +4,8 @@ import stanford.karel.Karel;
 //კარელს ჩანთაში უსასრულო რაოდენობის ბრილიანტი აქვს.
 public class Problem09 extends Karel{
 	public void run(){
-		move();
-		puttingOneSetOfBeepers();
+	while(beepersInBag()){move();
+		while(beepersPresent()){puttingOneSetOfBeepers();
 		turnLeft();
 		move();
 		puttingBeepersBack();
@@ -16,7 +16,8 @@ public class Problem09 extends Karel{
 		move();
 		turnLeft();
 		
-		
+		}
+	}
 	}
 	
 	private void puttingOneSetOfBeepers(){
