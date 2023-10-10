@@ -9,12 +9,12 @@ public class Problem10 extends Karel {
 
 	}
 
-	public void turnAround() {
+	private void turnAround() {
 		turnLeft();
 		turnLeft();
 	}
 
-	public void substractBeepers() {
+	private void substractBeepers() {
 		move();
 		move();
 		while (beepersPresent()) {
@@ -33,19 +33,10 @@ public class Problem10 extends Karel {
 			move();
 			move();
 		}
-		turnAround();
-		move();
-		turnAround();
-		while (beepersPresent()) {
-			pickBeeper();
-			move();
-			move();
-			putBeeper();
-			turnAround();
-			move();
-			move();
-			turnAround();
-		}
-
+		
+		
+	}
+	private void calculatingDevision(){
+		
 	}
 }
