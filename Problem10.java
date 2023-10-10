@@ -14,6 +14,7 @@ public class Problem10 extends Karel {
 			while (beepersPresent()) {
 				puttingBackDevisor();
 			}
+			puttingResult();
 			
 		}
 
@@ -48,7 +49,12 @@ public class Problem10 extends Karel {
 
 	}
 
-	private void calculatingDevision() {
+	private void puttingResult() {
+		turnAround();
+		move();
+		turnLeft();
+		move();
+		putBeeper();
 
 	}
 
