@@ -15,6 +15,9 @@ public class Problem10 extends Karel {
 				puttingBackDevisor();
 			}
 			puttingResult();
+			turnAround();
+			move();
+			turnAround();
 			
 		}
 
