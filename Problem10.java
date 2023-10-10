@@ -3,6 +3,47 @@ import stanford.karel.Karel;
 //ცალი ბრილიანტი, კარელმა 4x1 უჯრაზე უნდა დადოს n / m ბრილიანტი. ჩათვალეთ, რომ n
 //ზუსტად იყოფა m-ზე და კარელს ჩანთაში უსასრულო რაოდენობის ბრილიანტი აქვს.
 public class Problem10 extends Karel {
-	
+	public void run(){
+		substractBeepers();
+		
+	}
+		
+	}
 
+	public void turnAround(){
+		turnLeft();
+		turnLeft();
+	}
+	public void substractBeepers(){
+		move();
+		move();
+		while(beepersPresent()){
+			pickBeeper();
+			turnAround();
+			move();
+			move();
+			turnAround();
+			putBeeper();
+			move();
+			pickBeeper();
+			turnAround();
+			move();
+			turnAround();
+			putBeeper();
+			move();
+			move();
+		}
+		turnAround();
+		move();
+		turnAround();
+		while(beepersPresent()){
+			pickBeeper();
+			move();
+			move();
+			putBeeper();
+			turnAround();
+			move();
+			move();
+			turnAround();
+	}
 }
