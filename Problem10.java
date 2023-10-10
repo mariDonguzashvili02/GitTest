@@ -5,7 +5,12 @@ import stanford.karel.Karel;
 //ზუსტად იყოფა m-ზე და კარელს ჩანთაში უსასრულო რაოდენობის ბრილიანტი აქვს.
 public class Problem10 extends Karel {
 	public void run() {
+		move();
+		move();
+		while(beepersPresent()){
 		substractBeepers();
+		}
+		
 
 	}
 
@@ -15,9 +20,10 @@ public class Problem10 extends Karel {
 	}
 
 	private void substractBeepers() {
-		move();
-		move();
+		
 		while (beepersPresent()) {
+		
+			doublingTheDevisor();
 			pickBeeper();
 			turnAround();
 			move();
@@ -35,8 +41,26 @@ public class Problem10 extends Karel {
 		}
 		
 		
+		
 	}
 	private void calculatingDevision(){
 		
+	}
+	private void doublingTheDevisor(){
+		turnLeft();
+		move();
+		putBeeper();
+		turnAround();
+		move();
+		turnLeft();
+		
+	}
+	private void puttingBackDevisor(){
+		turnLeft();
+		move();
+		pickBeeper();
+		turnAround();
+		putBeeper();
+		turnLeft();
 	}
 }
