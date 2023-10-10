@@ -1,23 +1,23 @@
 import stanford.karel.Karel;
+
 //10. კარელმა უნდა გაყოს ორი რიცხვი, 2x1 უჯრაზე დევს n ცალი ბრილიანტი, 3x1 უჯრაზე m
 //ცალი ბრილიანტი, კარელმა 4x1 უჯრაზე უნდა დადოს n / m ბრილიანტი. ჩათვალეთ, რომ n
 //ზუსტად იყოფა m-ზე და კარელს ჩანთაში უსასრულო რაოდენობის ბრილიანტი აქვს.
 public class Problem10 extends Karel {
-	public void run(){
+	public void run() {
 		substractBeepers();
-		
-	}
-		
+
 	}
 
-	public void turnAround(){
+	public void turnAround() {
 		turnLeft();
 		turnLeft();
 	}
-	public void substractBeepers(){
+
+	public void substractBeepers() {
 		move();
 		move();
-		while(beepersPresent()){
+		while (beepersPresent()) {
 			pickBeeper();
 			turnAround();
 			move();
@@ -36,7 +36,7 @@ public class Problem10 extends Karel {
 		turnAround();
 		move();
 		turnAround();
-		while(beepersPresent()){
+		while (beepersPresent()) {
 			pickBeeper();
 			move();
 			move();
@@ -45,5 +45,7 @@ public class Problem10 extends Karel {
 			move();
 			move();
 			turnAround();
+		}
+
 	}
 }
