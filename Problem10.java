@@ -14,7 +14,7 @@ public class Problem10 extends Karel {
 			while (beepersPresent()) {
 				puttingBackDevisor();
 			}
-			putBeeper();
+			
 		}
 
 	}
