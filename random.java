@@ -13,7 +13,9 @@ public class random extends SuperKarel {
 			turnLeft();
 			if (frontIsClear()) {
 				move();
-				move();
+				if (frontIsClear()) {
+					move();
+				}
 			}
 
 			turnRight();
