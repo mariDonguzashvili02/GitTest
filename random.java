@@ -1,18 +1,21 @@
 import stanford.karel.SuperKarel;
 
 public class random extends SuperKarel {
-	public void run(){
+	public void run() {
 		turnLeft();
-		while(frontIsClear()){
+		while (frontIsClear()) {
 			move();
 		}
 		turnRight();
 		turnRight();
-		while(frontIsClear()){
+		while (frontIsClear()) {
 			move();
 			turnLeft();
-			move();
-			move();
+			if (frontIsClear()) {
+				move();
+				move();
+			}
+
 			turnRight();
 		}
 	}
