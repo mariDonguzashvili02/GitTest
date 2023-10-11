@@ -7,16 +7,13 @@ public class random extends SuperKarel {
 			move();
 		}
 		turnRight();
-		while(frontIsClear()){
-			move();
-		}
 		turnRight();
 		while(frontIsClear()){
 			move();
-			turnRight();
-			move();
-			move();
 			turnLeft();
+			move();
+			move();
+			turnRight();
 		}
 	}
 
