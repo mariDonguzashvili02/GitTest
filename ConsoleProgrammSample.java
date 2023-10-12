@@ -1,3 +1,4 @@
+
 /*
  * File: FindRange.java
  * --------------------
@@ -10,7 +11,8 @@ import acm.program.*;
 public class ConsoleProgrammSample extends ConsoleProgram {
 
 	public void run() {
-		println("Hello World!");
+		int kids = readInt();
+		println("Your kids number:" + kids);
 	}
 
 }
