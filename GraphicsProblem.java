@@ -16,9 +16,24 @@ public class GraphicsProblem extends GraphicsProgram {
 
 	private void drawHouse() {
 		drawWall();
-		/*drawWindows();
-		drawRoof();
-		drawDoor();*/
+		drawWindows();
+		/*
+		 * drawRoof(); drawDoor();
+		 */
+	}
+
+	private void drawWindows() {
+		for (int i = 0; i < 2; i++) {
+			double x;
+			int y = (int) ((getHeight() - HOUSE_HEIGHT) + WINDOW_HEIGHT / 2);
+			if (i == 0) {
+				x = getWidth() / 2 - HOUSE_WIDTH / 2 + WINDOW_WIDTH / 2;
+			} else {
+				x = getWidth() / 2 + HOUSE_WIDTH / 2 - WINDOW_WIDTH * 3 / 2;
+			}
+			GRect window = new GRect(WINDOW_WIDTH, WINDOW_HEIGHT);
+			add(window, x, y);
+		}
 	}
 
 	private void drawWall() {
