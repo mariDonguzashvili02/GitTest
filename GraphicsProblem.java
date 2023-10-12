@@ -5,9 +5,10 @@ import acm.graphics.GRect;
 public class GraphicsProblem extends GraphicsProgram {
 	private static final int WIDTH = 100;
 	private static final double HOUSE_WIDTH = 200;
-	private static final double HOUSE_HEIGHT = 200;
-	private static final double WINDOW_WIDTH = 200;
-	private static final double WINDOW_HEIGHT = 200;
+	private static final double HOUSE_HEIGHT = 00;
+	private static final double WINDOW_WIDTH = 40;
+	private static final double WINDOW_HEIGHT = 60;
+	private static final double ROOF_HEIGHT = 40;
 
 	public void run() {
 		drawMidLine();
@@ -17,9 +18,19 @@ public class GraphicsProblem extends GraphicsProgram {
 	private void drawHouse() {
 		drawWall();
 		drawWindows();
-		/*
-		 * drawRoof(); drawDoor();
+		 drawRoof();
+		 /*  drawDoor();
 		 */
+	}
+
+	private void drawRoof() {
+		
+		double x1 = getWidth()/2 -HOUSE_WIDTH / 2;
+		double y1 = getHeight() - HOUSE_HEIGHT;
+		double x2 = getWidth();
+		double y2 = y1;
+		GLine line = new GLine(x1, y1, x2, y2);
+		add(line);
 	}
 
 	private void drawWindows() {
@@ -38,8 +49,8 @@ public class GraphicsProblem extends GraphicsProgram {
 
 	private void drawWall() {
 		GRect wall = new GRect(HOUSE_WIDTH, HOUSE_HEIGHT);
-		double x = getWidth() / 2;
-		double y = getHeight();
+		double x = getWidth() / 2 - HOUSE_WIDTH /2;
+		double y = getHeight() - HOUSE_HEIGHT;
 		add(wall, x, y);
 	}
 
