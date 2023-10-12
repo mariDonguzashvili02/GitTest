@@ -11,8 +11,11 @@ import acm.program.*;
 public class ConsoleProgrammSample extends ConsoleProgram {
 
 	public void run() {
-		int kids = readInt("Enter the number of your kids:");
-		println("Your kids number:" + kids);
+		String kids = readLine ("ra gvaqvs davalebad?");
+		println("ra davaleba yleo?");
+		int davaleba1
+				 
+	
 	}
 
 }
