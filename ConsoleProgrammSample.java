@@ -12,7 +12,7 @@ public class ConsoleProgrammSample extends ConsoleProgram {
 
 	public void run() {
 		String kids = readLine ("ra gvaqvs davalebad?");
-		println("ra davaleba yleo?");
+		println("ra davaleba?");
 		int davaleba1
 				 
 	
