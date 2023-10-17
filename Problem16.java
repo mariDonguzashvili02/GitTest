@@ -5,11 +5,11 @@ public class Problem16 extends ConsoleProgram{
 
 	public void run(){
 		
-		int a = readInt("Enter the first number");
-		int b = readInt ("Enter the second number");
-		int c = readInt ("Enter the third number");
+		double a = readInt("Enter the first number: ");
+		double b = readInt ("Enter the second number: ");
+		double c = readInt ("Enter the third number: ");
 		
-		int harm = 1/(1/a + 1/b + 1/c);
+		double harm = 1/(1/a + 1/b + 1/c);
 		println(harm);
 	}
 }
