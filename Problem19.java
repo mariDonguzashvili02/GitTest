@@ -6,8 +6,8 @@ public class Problem19 extends ConsoleProgram {
 	public void run(){
 		
 		int n = readInt("Enter the whole number: ");
-		for(int x = 0; x<n; n--){
-			int i = n-1;
+		for(int x = 0; x < n; n--){
+			int i = n - 1;
 			println("hello" + i);
 		}
 	}
