@@ -10,6 +10,9 @@ public class Problem21 extends GraphicsProgram{
 		double x2 = 100;
 		double y2 = 100;
 
+
+		GLine verticalLine = new GLine(x1,y1,x1,y2);
+		add(verticalLine);
 		
 		for(int i = 0; i > 10 ; i++){
 			
@@ -17,7 +20,7 @@ public class Problem21 extends GraphicsProgram{
 			x2 += 10;
 			y2 += 10;
 			
-			GLine verticalLine = new GLine(x1,y1,x1,y2);
+			GLine verticalLin = new GLine(x1,y1,x1,y2);
 			add(verticalLine);
 			
 		}
