@@ -1,4 +1,6 @@
+import acm.program.GraphicsProgram;
 
-public class AdditionalProbelmSem9 {
+public class AdditionalProbelmSem9 extends GraphicsProgram{
+	p
 
 }
