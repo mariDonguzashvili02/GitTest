@@ -9,7 +9,7 @@ public class Problem21 extends GraphicsProgram{
 		int height = 100;
 		
 		double x1 = 0;
-		double y1 = 0;
+		double y1 = 10;
 		double x2 = 100;
 		double y2 = 100;
 
@@ -17,7 +17,7 @@ public class Problem21 extends GraphicsProgram{
 		for(int i = 0; i > 10 ; i++){
 			
 			x1 += 10;
-			y1 += 10;
+			
 			x2 += 10;
 			y2 += 10;
 			
