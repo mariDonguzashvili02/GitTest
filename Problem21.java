@@ -5,9 +5,6 @@ import acm.program.GraphicsProgram;
 public class Problem21 extends GraphicsProgram{
 	public void run(){
 		 
-		int width = 100;
-		int height = 100;
-		
 		double x1 = 0;
 		double y1 = 10;
 		double x2 = 100;
@@ -17,7 +14,6 @@ public class Problem21 extends GraphicsProgram{
 		for(int i = 0; i > 10 ; i++){
 			
 			x1 += 10;
-			
 			x2 += 10;
 			y2 += 10;
 			
