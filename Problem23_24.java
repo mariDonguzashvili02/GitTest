@@ -9,6 +9,8 @@ public class Problem23_24 extends ConsoleProgram{
 		int n = readInt("Enter n: ");
 		int sum = calculateSum(n);
 		println("Sum is :" + sum);
+		int factors = countFactors(n);
+		println("The factors are: " + factors);
 	}
 
 	private int calculateSum(int num) {
@@ -18,4 +20,15 @@ public class Problem23_24 extends ConsoleProgram{
 		}
 		return sum;
 	}
+	private int countFactors(int num){
+		int factors = 0;
+		for( int i = 1; i <= num; i++ ){
+			if(num % i == 0){
+				factors++;
+			}
+		}
+		return factors;
+		
+	}
+	
 }
