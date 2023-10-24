@@ -8,6 +8,6 @@ public class Problem20 extends ConsoleProgram{
 		while (number > 0){
 			sum += number;
 		}
-		println(sum);
+		println("The sum of the nummber:" + sum);
 	}
 }
