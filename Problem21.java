@@ -21,7 +21,7 @@ public class Problem21 extends GraphicsProgram{
 			x2 += 10;
 			y2 += 10;
 			
-			GLine verticalLine = new GLine(x1,y1,x2,y2);
+			GLine verticalLine = new GLine(x1,y1,x1,y2);
 			add(verticalLine);
 			
 		}
