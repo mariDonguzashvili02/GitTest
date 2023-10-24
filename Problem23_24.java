@@ -11,10 +11,11 @@ public class Problem23_24 extends ConsoleProgram{
 		println("Sum is :" + sum);
 	}
 
-	private int calculateSum(int n) {
-		for(int i = 0; i < n, i++){
-			
+	private int calculateSum(int num) {
+		int sum = 0;
+		for(int i = 1; i <= num;  i++){
+			sum += i;
 		}
-		return 0;
+		return sum;
 	}
 }
