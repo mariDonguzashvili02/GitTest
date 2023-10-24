@@ -8,7 +8,7 @@ public class Problem21 extends GraphicsProgram {
 		double x1 = 0;
 		double y1 = 10;
 		double x2 = 100;
-		double y2 = 110;
+		double y2 = 120;
 
 		for (int i = 0; i < 10; i++) {
 
@@ -20,7 +20,7 @@ public class Problem21 extends GraphicsProgram {
 
 		}
 		x1 = 10;
-		x2 = 110;
+		x2 = 120;
 		y1 = 0;
 		y2 = 100;
 				
