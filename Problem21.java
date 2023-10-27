@@ -11,13 +11,10 @@ public class Problem21 extends GraphicsProgram {
 		double y2 = 110;
 
 		for (int i = 0; i < 10; i++) {
-
-			x1 += 10;
-		
-
+			
 			GLine verticalLine = new GLine(x1, y1, x1, y2);
 			add(verticalLine);
-
+			x1 += 10;
 		}
 		x1 = 10;
 		x2 = 110;
@@ -25,9 +22,10 @@ public class Problem21 extends GraphicsProgram {
 		y2 = 100;
 				
 		for(int i = 0; i < 10; i++){
-			y1 += 10;
+			
 			GLine horizontalLine = new GLine(x1, y1, x2, y1);
 			add(horizontalLine);
+			y1 += 10;
 		}
 
 	}
