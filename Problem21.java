@@ -27,7 +27,7 @@ public class Problem21 extends GraphicsProgram {
 			add(horizontalLine);
 			y1 += 10;
 		}
-
+	
 	}
 
 }
