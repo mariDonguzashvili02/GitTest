@@ -9,10 +9,10 @@ public class Problem27 extends ConsoleProgram {
 		
 	}
 	private int power(int n, int m){
-		int p = 0;
+		int p = n;
 		for( int i = 0 ; i < m ; i++){
 			
-			p = n * n;
+			p = p * n;
 			
 		}
 		return p;
