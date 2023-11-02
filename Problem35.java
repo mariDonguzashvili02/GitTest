@@ -20,7 +20,7 @@ public class Problem35 extends ConsoleProgram {
 		int numFlips = 0;
 		while(true){
 			numFlips += 1;
-			boolean isHeads = rgen.nextBoolean();
+			boolean isHeads = rgen.nextBoolean(0.1);
 			if (isHeads){
 				break;
 			}
