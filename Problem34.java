@@ -12,7 +12,7 @@ import acm.util.RandomGenerator;
 public class Problem34 extends GraphicsProgram {
 	private static final int MIN_RADIUS = 10;
 	private static final int MAX_RADIUS = 30;
-
+	private static final int NUM_CIRCLES = 1000;
 	private RandomGenerator rgen = RandomGenerator.getInstance();
 
 	public void run() {
@@ -22,7 +22,9 @@ public class Problem34 extends GraphicsProgram {
 		// myRect.setFilled(true);
 		// int a = rgen.nextInt(6);
 
-		addRandomCircle();
+		for(int i = 0; i < NUM_CIRCLES; i++){
+			addRandomCircle();
+		}
 	}
 
 	private void addRandomCircle(){
