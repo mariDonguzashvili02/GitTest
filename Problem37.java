@@ -26,7 +26,7 @@ public class Problem37 extends ConsoleProgram {
 
 	private int readBetNumber() {
 		while (true) {
-			int betNum = readInt("Enter number from"+ MIN_VALUE +" to" + MAX_VALUE + ": ");
+			int betNum = readInt("Enter number from "+ MIN_VALUE +" to " + MAX_VALUE + ": ");
 			
 			if (betNum < MIN_VALUE || betNum > MAX_VALUE) {
 				betNum = readInt("Enter number from 0 to 36: ");
