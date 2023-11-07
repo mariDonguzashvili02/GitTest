@@ -23,7 +23,7 @@ public class GraphicsSample2 extends GraphicsProgram{
 		int vx = 3;
 		int vy = 0;
 		
-		while(myRect.getX() != finalX){
+		while(myRect.getX() <= finalX){
 			myRect.move(vx, vy);
 			pause(PAUSE_MS);
 		}
