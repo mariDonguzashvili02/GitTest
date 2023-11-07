@@ -20,7 +20,7 @@ public class GraphicsSample2 extends GraphicsProgram{
 		
 		
 		int finalX = 200;
-		int vx = 5;
+		int vx = 3;
 		int vy = 0;
 		
 		while(myRect.getX() != finalX){
