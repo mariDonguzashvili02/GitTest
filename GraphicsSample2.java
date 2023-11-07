@@ -4,7 +4,7 @@ import acm.graphics.GRect;
 import acm.program.GraphicsProgram;
 
 public class GraphicsSample2 extends GraphicsProgram{
-	private static final int PAUSE_MS = 1000;
+	private static final int PAUSE_MS = 20;
 	public void run(){
 		
 		GRect myRect = new GRect(100,200);
@@ -25,6 +25,7 @@ public class GraphicsSample2 extends GraphicsProgram{
 		
 		while(myRect.getX() != finalX){
 			myRect.move(vx, vy);
+			pause(PAUSE_MS);
 		}
 	}
 
