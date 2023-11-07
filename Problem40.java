@@ -9,7 +9,7 @@ import acm.graphics.GOval;
 public class Problem40 extends GraphicsProblem {
 	private static final int radius = 50;
 	private static final int PAUSE_MS = 20;
-	private static final int VEL_X = 3;
+	private static final int VEL_X = 8;
 
 	public void run() {
 
