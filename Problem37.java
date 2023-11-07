@@ -7,7 +7,7 @@ import acm.util.RandomGenerator;
 public class Problem37 extends ConsoleProgram {
 	private RandomGenerator rgen = RandomGenerator.getInstance();
 	private static final int MAX_VALUE = 36;
-	private staic final int MIN_VALUE = 0;
+	private static final int MIN_VALUE = 0;
 	public void run() {
 		int betNumber = readBetNumber();
 		int rouletteResult = spinRoulette();
@@ -21,6 +21,7 @@ public class Problem37 extends ConsoleProgram {
 
 	private int spinRoulette() {
 		int rouletteResult = rgen.nextInt(MIN_VALUE , MAX_VALUE);
+		return rouletteResult;
 	}
 
 	private int readBetNumber() {
