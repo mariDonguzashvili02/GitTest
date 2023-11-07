@@ -14,6 +14,8 @@ public class GraphicsSample2 extends GraphicsProgram{
 		myRect.setColor(Color.RED);
 		pause(PAUSE_MS);
 		myRect.setColor(Color.BLUE);
+		
+		myRect.setLocation(200, 250);
 	}
 
 }
