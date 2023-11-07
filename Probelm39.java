@@ -15,9 +15,9 @@ public class Probelm39 extends GraphicsProgram {
 		circle.setFilled(true);
 		circle.setColor(Color.RED);
 		double x = 0;
-		double y = getWidth()/ 2;
+		double y = getHeight()/ 2;
 		add(circle, x, y);
-		double finalX = getWidth();
+		double finalX = getWidth() - radius;
 		
 		while(circle.getX() <= finalX){
 			circle.move(VEL_X, 0);
