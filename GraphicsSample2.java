@@ -13,10 +13,19 @@ public class GraphicsSample2 extends GraphicsProgram{
 		
 		myRect.setColor(Color.RED);
 		pause(PAUSE_MS);
-		myRect.setColor(Color.BLUE);
-		
+//		myRect.setColor(Color.BLUE);
+//		
 //		myRect.setLocation(200, 250);
-		myRect.move(200, 250);
+//		myRect.move(200, 250);
+		
+		
+		int finalX = 200;
+		int vx = 5;
+		int vy = 0;
+		
+		while(myRect.getX() != finalX){
+			myRect.move(vx, vy);
+		}
 	}
 
 }
