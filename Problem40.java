@@ -15,7 +15,7 @@ public class Problem40 extends GraphicsProblem {
 
 		GOval circle = new GOval(radius, radius);
 		circle.setFilled(true);
-		circle.setColor(Color.RED);
+		circle.setColor(Color.PINK);
 		double x = 0;
 		double y = getHeight() / 2;
 		add(circle, x, y);
