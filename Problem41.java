@@ -8,12 +8,11 @@ import acm.program.GraphicsProgram;
 //ეკრანზე დაამატეთ გაფერადებული წრეწირები იმავე წერტილში სადაც მაუსი მდებარეობს.
 public class Problem41 extends GraphicsProgram {
 	public void run() {
-		while (true) {
-			addMouseListeners();
-		}
+		
+		addMouseListeners();
 	}
-
-	public void mouseClicked(MouseEvent e) {
+	
+	public void mouseDragged(MouseEvent e) {
 		GOval circle = new GOval(20, 20);
 		circle.setFilled(true);
 		circle.setColor(Color.RED);
