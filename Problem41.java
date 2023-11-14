@@ -18,7 +18,7 @@ public class Problem41 extends GraphicsProgram {
 		GOval circle = new GOval(20, 20);
 		circle.setFilled(true);
 		circle.setColor(Color.RED);
-		add(circle, e.getX(), e.getY());
+		add(circle, e.getX() - RADIUS, e.getY() - RADIUS);
 
 	}
 }
