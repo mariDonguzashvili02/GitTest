@@ -5,12 +5,12 @@ import acm.graphics.GOval;
 import acm.program.GraphicsProgram;
 //43. წრეწირის drag ით გადაადგილება
 public class Problem43 extends GraphicsProgram {
-	private GOval circle;
+	private GObject lastPressed;
 	private static final int RADIUS = 50;
 	private static double prevX;
 	private static double prevY;
 	public void run(){
-		circle = new GOval(2 * RADIUS, 2 * RADIUS);
+		GOval circle = new GOval(2 * RADIUS, 2 * RADIUS);
 		circle.setFilled(true);
 		add(circle, getWidth() / 2 - RADIUS, getWidth() / 2 - RADIUS);
 		addMouseListeners();
@@ -18,6 +18,7 @@ public class Problem43 extends GraphicsProgram {
 	
 	public void mousePressed(MouseEvent e ){
 		GObject obj = getElementAt(e.getX(), e.getY());
+		lastPressed = obj;
 		if(obj != null){
 			
 			prevX = e.getX();
@@ -26,8 +27,8 @@ public class Problem43 extends GraphicsProgram {
 	}
 	
 	public void mouseDragged(MouseEvent e ){
-		GObject obj = getElementAt(e.getX(), e.getY());
-		if(obj != null){
+		
+		if(lastPressed != null){
 			obj.move(e.getX() - prevX, e.getY() - prevY);
 			prevX = e.getX();
 			prevY = e.getY();
