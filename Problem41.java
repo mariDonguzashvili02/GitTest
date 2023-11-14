@@ -15,14 +15,15 @@ public class Problem41 extends GraphicsProgram {
 	}
 	
 	public void mouseDragged(MouseEvent e) {
-		GOval circle = new GOval(20, 20);
+		GOval circle = new GOval(2 * RADIUS, 2*RADIUS);
 		circle.setFilled(true);
 		circle.setColor(Color.RED);
 		add(circle, e.getX() - RADIUS, e.getY() - RADIUS);
 
 	}
+	
 	public void mousePressed(MouseEvent e) {
-		GOval circle = new GOval(20, 20);
+		GOval circle = new GOval(2 * RADIUS, 2 * RADIUS);
 		circle.setFilled(true);
 		circle.setColor(Color.RED);
 		add(circle, e.getX() - RADIUS, e.getY() - RADIUS);
