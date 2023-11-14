@@ -11,7 +11,7 @@ public class Problem41 extends GraphicsProgram {
 	private static final int RADIUS = 20;
 	public void run() {
 		
-		getMouseMotionListeners();
+		addMouseListeners();
 	}
 	
 	public void mouseDragged(MouseEvent e) {
