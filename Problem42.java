@@ -20,8 +20,7 @@ public class Problem42 extends GraphicsProgram{
 	
 	@Override
 	public void mouseDragged(MouseEvent e ){
-		
-		
+		line.setEndPoint(e.getX(), e.getY());
 		
 	}
 	
