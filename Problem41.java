@@ -21,4 +21,11 @@ public class Problem41 extends GraphicsProgram {
 		add(circle, e.getX() - RADIUS, e.getY() - RADIUS);
 
 	}
+	public void mousePressed(MouseEvent e) {
+		GOval circle = new GOval(20, 20);
+		circle.setFilled(true);
+		circle.setColor(Color.RED);
+		add(circle, e.getX() - RADIUS, e.getY() - RADIUS);
+
+	}
 }
