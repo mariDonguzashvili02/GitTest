@@ -12,7 +12,7 @@ public class Problem51 extends ConsoleProgram{
 		String result = "";
 		for(int i = 0; i < text.length(); i++){
 			char c = text.charAt(i);
-			if(result.charAt(i) == -1){
+			if(result.indexOf(c) == -1){
 				result += c;
 			}
 		}
