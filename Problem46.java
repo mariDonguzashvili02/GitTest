@@ -7,8 +7,7 @@ public class Problem46 extends ConsoleProgram{
   public void run(){
 	
 	String str = "fat";
-	int one = 3;
-	int two = 2; 
+	
 	println(symbolComparer(str));
 	
   }
