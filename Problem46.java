@@ -21,6 +21,9 @@ public class Problem46 extends ConsoleProgram{
 			frequentChar = text.charAt(i);
 		}
 	}
+	if(frequentChar == 1){
+		return '0';
+	}
 	return frequentChar;
   }
  
