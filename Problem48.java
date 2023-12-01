@@ -13,7 +13,7 @@ public class Problem48 extends ConsoleProgram {
 
 		for (int i = 0; i < text.length(); i++) {
 			char c = text.charAt(i);
-			if (isFirstOcurrence(text, i)==true) {
+			if (isFirstOcurrence(text, i)) {
 				int count = symbolCounter(text, c);
 				println("Symbol " + c + " occurs " + count + " time/s");
 			}
@@ -33,9 +33,7 @@ public class Problem48 extends ConsoleProgram {
 	private boolean isFirstOcurrence(String text, int index) {
 		char c = text.charAt(index);
 		int firstIndex = text.indexOf(c);
-		if(firstIndex == c){
-			return true;
-		}
-		return false;
+		
+		return firstIndex == index;
 	}
 }
