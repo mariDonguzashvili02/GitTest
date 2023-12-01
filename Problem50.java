@@ -14,6 +14,7 @@ public class Problem50 extends ConsoleProgram{
 		StringTokenizer tokenizer = new StringTokenizer(text);
 		int count = 0;
 		while(tokenizer.hasMoreTokens()){
+			tokenizer.nextToken();
 			count++;
 		}
 		return count;
