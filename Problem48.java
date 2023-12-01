@@ -14,7 +14,8 @@ public class Problem48 extends ConsoleProgram {
 		for (int i = 0; i < text.length(); i++) {
 			char c = text.charAt(i);
 			if (isFirstOcurrence(text, i)) {
-				println("Symbol " + c + " occurs " + symbolCounter(text, c) + " times");
+				int count = symbolCounter(text, c);
+				println("Symbol " + c + " occurs " + count + " times");
 			}
 		}
 	}
