@@ -13,10 +13,10 @@ public class Problem48 extends ConsoleProgram {
 
 		for (int i = 0; i < text.length(); i++) {
 			char c = text.charAt(i);
-			if (isFirstOcurrence(text, i)) {
+			//if (isFirstOcurrence(text, i)) {
 				int count = symbolCounter(text, c);
 				println("Symbol " + c + " occurs " + count + " times");
-			}
+			//}
 		}
 	}
 
