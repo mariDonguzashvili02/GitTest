@@ -32,7 +32,9 @@ public class Problem48 extends ConsoleProgram {
 	private boolean isFirstOcurrence(String text, int index) {
 		char c = text.charAt(index);
 		int firstIndex = text.indexOf(c);
-
-		return firstIndex == c;
+		if(firstIndex == c){
+			return true;
+		}
+		return false;
 	}
 }
