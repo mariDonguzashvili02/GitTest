@@ -7,7 +7,7 @@ public class Problme45 extends ConsoleProgram{
    public void run(){
 
 	String str = "Hello";
-	println(symbolCounter(str, 'H'));
+	println(symbolCounter(str, 'l'));
 
    }	
    
