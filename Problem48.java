@@ -5,7 +5,7 @@ import acm.program.ConsoleProgram;
 
 public class Problem48 extends ConsoleProgram {
 	public void run() {
-		String str = "karada";
+		String str = readLine("Write text: ");
 		symbolStatistics(str);
 	}
 
