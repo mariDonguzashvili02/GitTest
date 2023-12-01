@@ -11,7 +11,7 @@ public class Problem48 extends ConsoleProgram{
 	private void symbolStatistics(String text){
 		for(int i = 0; i < text.length(); i++){
 			char c = text.charAt(i);
-			if(isFirstOcurrence(text, text.indexOf(c))){
+			if(isFirstOcurrence(text, i)){
 				println("Symbol " + c + " occurs " + symbolCounter(text, c) + " times");
 			}
 		}
