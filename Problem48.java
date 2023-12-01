@@ -10,7 +10,7 @@ public class Problem48 extends ConsoleProgram{
 	}
 	private void symbolStatistics(String text){
 		for(int i = 0; i < text.length(); i++){
-			if(isFirstOcurrence(text, text.charAt(i)) == true){
+			if(isFirstOcurrence(text, text.charAt(i))){
 				println("Symbol " + text.charAt(i) + " occurs " + symbolCounter(text, text.charAt(i)) + " times");
 			}
 		}
@@ -29,6 +29,7 @@ public class Problem48 extends ConsoleProgram{
 	private boolean isFirstOcurrence(String text, int index){
 		char c = text.charAt(index);
 		int firstIndex = text.indexOf(c);
+		
 		return firstIndex == c;
 	}
 }
