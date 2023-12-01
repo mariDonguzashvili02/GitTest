@@ -19,7 +19,7 @@ public class Problem47 extends ConsoleProgram{
 	String rightHalf = word.substring(word.length() / 2, word.length() - 1);
 	if(word.length() % 2 == 1){
 		leftHalf = word.substring(0, word.length() /2 );
-		rightHalf = word.substring((word.length() / 2) + 1, word.length());
+		rightHalf = word.substring((word.length() / 2) + 2, word.length());
 	}
 	if(leftHalf.equals(rightHalf)){
 		return true;
