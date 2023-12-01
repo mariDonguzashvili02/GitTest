@@ -7,8 +7,11 @@ public class Problem46 extends ConsoleProgram{
   public void run(){
 	
 	String str = "fat";
-
+	int one = 3;
+	int two = 2; 
 	println(symbolComparer(str));
+	println(one / two);
+	
   }
 
   private char symbolComparer(String text){
@@ -21,9 +24,7 @@ public class Problem46 extends ConsoleProgram{
 			frequentChar = text.charAt(i);
 		}
 	}
-	if(frequentChar == 1){
-		return '0';
-	}
+	
 	return frequentChar;
   }
  
