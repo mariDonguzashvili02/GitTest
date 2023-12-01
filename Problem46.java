@@ -10,7 +10,6 @@ public class Problem46 extends ConsoleProgram{
 	int one = 3;
 	int two = 2; 
 	println(symbolComparer(str));
-	println(one / two);
 	
   }
 
