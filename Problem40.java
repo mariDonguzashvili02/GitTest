@@ -22,7 +22,7 @@ public class Problem40 extends GraphicsProblem {
 		double finalX = getWidth() - radius;
 		while (true) {
 			while (circle.getX() <= finalX) {
-				circle.move(VEL_X, VEL_X);
+				circle.move(VEL_X, 0);
 				pause(PAUSE_MS);
 			}
 			while (circle.getX() >= 0) {
