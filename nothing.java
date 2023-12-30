@@ -33,7 +33,7 @@ public class nothing extends ConsoleProgram {
 	}
 	
 	private int[] elementRemover(int[] arr, int element) {
-		int count = 0;
+		int count = 1;
 
 		for (int i = 0; i < arr.length; i++) {
 			if (arr[i] == element) {
