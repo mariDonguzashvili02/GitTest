@@ -16,15 +16,16 @@ public class nothing extends ConsoleProgram {
 			int element = dice[i];
 			int count = 1;
 			for (int j = 0; j < dice.length; j++) {
-				if (dice[j] == element) {
-					count++;
-					if (count == 3) {
+				if (dice[j] == element && i != j) {
+					count++;	
+				}
+				
+			}
+			if (count == 3) {
 
-						int[] twos = elementRemover(dice, dice[j]);
-						if (twos[0] == twos[1]) {
-							return true;
-						}
-					}
+				int[] twos = elementRemover(dice, dice[j]);
+				if (twos[0] == twos[1]) {
+					return true;
 				}
 			}
 		}
@@ -33,7 +34,7 @@ public class nothing extends ConsoleProgram {
 	}
 	
 	private int[] elementRemover(int[] arr, int element) {
-		int count = 1;
+		int count = 0;
 
 		for (int i = 0; i < arr.length; i++) {
 			if (arr[i] == element) {
