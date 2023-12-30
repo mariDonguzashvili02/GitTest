@@ -2,7 +2,7 @@ import acm.program.ConsoleProgram;
 
 public class nothing extends ConsoleProgram {
 	public void run(){
-		int[] dice = {5, 2, 3, 4, 6};
+		int[] dice = {5, 1, 3, 4, 6};
 		if(checkForStreets(dice)){
 			println("true");
 		}else{
