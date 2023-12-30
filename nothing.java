@@ -23,7 +23,7 @@ public class nothing extends ConsoleProgram {
 			}
 			if (count == 3) {
 
-				int[] twos = elementRemover(dice, dice[j]);
+				int[] twos = elementRemover(dice, dice[i]);
 				if (twos[0] == twos[1]) {
 					return true;
 				}
