@@ -1,13 +1,25 @@
+import java.util.Arrays;
+
 import acm.program.ConsoleProgram;
 
 public class nothing extends ConsoleProgram {
 	public void run(){
 		int[] dice = {1, 2, 3, 4, 5};
-		if(checkSameDice(2,dice)){
+		if(checkForLargeStreet(dice)){
 			println("true");
 		}else{
 			println("false");
 		}
+	}
+	
+	private boolean checkForLargeStreet(int[] dice){
+		int[] sequence1 = {1, 2, 3, 4, 5};
+		int[] sequence2 = {2, 3, 4, 5, 6};
+		Arrays.sort(dice);
+		if(Arrays.equals(sequence1, dice)|| Arrays.equals(sequence2, dice)){
+			return true;
+		}
+		return false;
 	}
 	
 	private boolean checkSameDice(int n, int[] dice) {
