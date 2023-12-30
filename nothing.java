@@ -2,7 +2,7 @@ import acm.program.ConsoleProgram;
 
 public class nothing extends ConsoleProgram {
 	public void run(){
-		int[] dice = {2, 2, 3, 4, 5};
+		int[] dice = {1, 2, 3, 4, 5};
 		if(checkSameDice(2,dice)){
 			println("true");
 		}else{
