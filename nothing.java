@@ -2,7 +2,7 @@ import acm.program.ConsoleProgram;
 
 public class nothing extends ConsoleProgram {
 	public void run(){
-		int[] dice = {5, 5, 3, 4, 3};
+		int[] dice = {5, 5, 3, 3, 3};
 		if(checkForFullHouse(dice)){
 			println("true");
 		}else{
