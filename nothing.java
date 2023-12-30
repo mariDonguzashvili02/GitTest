@@ -2,34 +2,27 @@ import acm.program.ConsoleProgram;
 
 public class nothing extends ConsoleProgram {
 	public void run(){
-		int[] dice = {1, 2, 3, 4, 5};
-		if(checkForFullHouse(dice)){
+		int[] dice = {2, 2, 3, 4, 5};
+		if(checkSameDice(2,dice)){
 			println("true");
 		}else{
 			println("false");
 		}
 	}
 	
-	private boolean checkForFullHouse(int[] dice) {
-
+	private boolean checkSameDice(int n, int[] dice) {
 		for (int i = 0; i < dice.length; i++) {
 			int element = dice[i];
 			int count = 1;
-			for (int j = 0; j < dice.length; j++) {
-				if (dice[j] == element && i != j) {
-					count++;	
-				}
-				
-			}
-			if (count == 3) {
-
-				int[] twos = elementRemover(dice, dice[i]);
-				if (twos[0] == twos[1]) {
-					return true;
+			for (int j = i + 1; j < dice.length; j++) {
+				if (dice[j] == element) {
+					count++;
+					if (count == n) {
+						return true;
+					}
 				}
 			}
 		}
-		
 		return false;
 	}
 	
