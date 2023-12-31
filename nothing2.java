@@ -13,20 +13,19 @@ public class nothing2 extends ConsoleProgram {
 	}
 	
 	private boolean checkForSmallStraight(int[] dice) {
-		int[] template = { 1, 2, 3, 4, 5, 6 };
-		int count = 1;
-		for (int i = 0; i < dice.length; i++) {
-			for (int j = 0; j < dice.length; j++) {
-				if (dice[j] == template[i]) {
-					count++;
-					break;
-				}
-			}
-		}
-		if (count == 5) {
-			return true;
-		}
-		return false;
+		Arrays.sort(dice); // Sort the dice values
+	    int count = 1;
+	    for (int i = 0; i < dice.length - 1; i++) {
+	        if (dice[i] + 1 == dice[i + 1]) {
+	            count++;
+	            if (count == 4) { // Found a sequence of four consecutive numbers
+	                return true;
+	            }
+	        } else if (dice[i] != dice[i + 1]) {
+	            count = 1; // Reset the count if not consecutive or duplicate
+	        }
+	    }
+	    return false;
 	}
 
 	private boolean checkForLargeStraight(int[] dice) {
