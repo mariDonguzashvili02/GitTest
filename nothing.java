@@ -3,14 +3,14 @@ import java.util.Arrays;
 import acm.program.ConsoleProgram;
 
 public class nothing extends ConsoleProgram {
-	private int[] dice = { 2, 2, 3, 4, 5 };
+	private int[] dice = { 6, 5, 1, 1, 1 };
 
 	public void run() {
 
-		if (checkCategory(dice, 1)) {
-			int score = scoreCounter(dice, 1);
+		
+			int score = scoreCounter(dice, 13);
 			println(score);
-		}
+		
 
 	}
 
