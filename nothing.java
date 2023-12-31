@@ -7,7 +7,7 @@ public class nothing extends ConsoleProgram {
 	public void run(){
 	   
 		int score = scoreCounter(dice, 1);
-		println(score);
+		println();
 	}
 	
 	private int scoreCounter(int[] dice, int category) {
