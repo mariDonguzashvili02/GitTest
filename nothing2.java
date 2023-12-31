@@ -4,8 +4,8 @@ import acm.program.ConsoleProgram;
 
 public class nothing2 extends ConsoleProgram {
 	public void run(){
-		int[] dice = {2, 3, 6, 5, 3};
-		if(checkForLargeStraight(dice)){
+		int[] dice = {2, 3, 6, 5, 4};
+		if(checkForSmallStraight(dice)){
 			println("True");
 		}else{
 			println("False");
