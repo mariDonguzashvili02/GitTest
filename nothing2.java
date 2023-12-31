@@ -14,7 +14,7 @@ public class nothing2 extends ConsoleProgram {
 	
 	private boolean checkForSmallStraight(int[] dice) {
 		int[] template = { 1, 2, 3, 4, 5, 6 };
-		int count = 0;
+		int count = 1;
 		for (int i = 0; i < dice.length; i++) {
 			for (int j = 0; j < dice.length; j++) {
 				if (dice[j] == template[i]) {
