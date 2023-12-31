@@ -23,7 +23,7 @@ public class nothing2 extends ConsoleProgram {
 				}
 			}
 		}
-		if (count == 4) {
+		if (count == 5) {
 			return true;
 		}
 		return false;
