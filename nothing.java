@@ -3,13 +3,17 @@ import java.util.Arrays;
 import acm.program.ConsoleProgram;
 
 public class nothing extends ConsoleProgram {
-	private int[] dice= {2, 2, 3, 4, 5};
-	public void run(){
-	   
-		int score = scoreCounter(dice, 1);
-		println();
+	private int[] dice = { 2, 2, 3, 4, 5 };
+
+	public void run() {
+
+		if (checkCategory(dice, 1)) {
+			int score = scoreCounter(dice, 1);
+			println(score);
+		}
+
 	}
-	
+
 	private int scoreCounter(int[] dice, int category) {
 		switch (category) {
 		case 1:
@@ -40,7 +44,7 @@ public class nothing extends ConsoleProgram {
 			return lowerScoreCounter();
 		case 17:
 			return lowerScoreCounter() + upperScoreCounter();
-		default: 
+		default:
 			return 0;
 		}
 	}
@@ -104,7 +108,7 @@ public class nothing extends ConsoleProgram {
 		}
 		return sum;
 	}
-	
+
 	private boolean checkCategory(int[] dice, int category) {
 		switch (category) {
 		case 1:
@@ -223,8 +227,6 @@ public class nothing extends ConsoleProgram {
 		return false;
 	}
 
-	
-
 	private boolean checkNumbers(int n, int[] dice) {
 		for (int i = 0; i < dice.length; i++) {
 			if (dice[i] == n) {
@@ -233,7 +235,5 @@ public class nothing extends ConsoleProgram {
 		}
 		return false;
 	}
-
-	
 
 }
