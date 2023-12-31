@@ -4,7 +4,7 @@ import acm.program.ConsoleProgram;
 
 public class nothing2 extends ConsoleProgram {
 	public void run(){
-		int[] dice = {1, 3, 4, 5, 3};
+		int[] dice = {2, 3, 4, 5, 2};
 		if(checkForSmallStraight(dice)){
 			println("True");
 		}else{
@@ -29,7 +29,7 @@ public class nothing2 extends ConsoleProgram {
 		return false;
 	}
 
-	private boolean checkForLargeStreet(int[] dice) {
+	private boolean checkForLargeStraight(int[] dice) {
 		int[] sequence1 = { 1, 2, 3, 4, 5 };
 		int[] sequence2 = { 2, 3, 4, 5, 6 };
 		Arrays.sort(dice);
