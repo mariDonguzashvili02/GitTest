@@ -5,7 +5,7 @@ import acm.program.ConsoleProgram;
 public class nothing2 extends ConsoleProgram {
 	public void run(){
 		int[] dice = {2, 3, 6, 5, 4};
-		if(checkForSmallStraight(dice)){
+		if(checkForLargeStraight(dice)){
 			println("True");
 		}else{
 			println("False");
