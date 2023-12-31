@@ -21,9 +21,10 @@ public class nothing2 extends ConsoleProgram {
 	            if (count == 4) { // Found a sequence of four consecutive numbers
 	                return true;
 	            }
-	        } else if (dice[i] != dice[i + 1]) {
-	            count = 1; // Reset the count if not consecutive or duplicate
 	        }
+//	        } else if (dice[i] != dice[i + 1]) {
+//	            count = 1; // Reset the count if not consecutive or duplicate
+//	        }
 	    }
 	    return false;
 	}
