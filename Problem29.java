@@ -26,6 +26,7 @@ public class Problem29 extends ConsoleProgram {
 			f = f1 + f2;
 			f2 = f1;
 			f1 = f;
+			n--;
 		}
 
 		return f;
