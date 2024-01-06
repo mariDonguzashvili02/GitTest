@@ -4,8 +4,8 @@ import acm.program.ConsoleProgram;
 //მე n წევრი.
 public class Problem29 extends ConsoleProgram {
 	public void run(){
-		int n = readInt("Please, enter Fibonacci numbers bound");
-		int f = 0;
+		int n = readInt("Please, enter Fibonacci numbers bound: ");
+		int f = -1;
 		int f1 = 1;
 		int f2 = f + f1;
 		
