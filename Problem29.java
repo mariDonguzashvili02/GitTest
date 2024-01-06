@@ -4,12 +4,12 @@ import acm.program.ConsoleProgram;
 //მე n წევრი.
 public class Problem29 extends ConsoleProgram {
 	public void run() {
-		while (true) {
+		
 			int n = readInt("Please, enter Fibonacci numbers bound: ");
 
 			int fib = fibonacci(n);
 			println(fib);
-		}
+		
 
 	}
 
