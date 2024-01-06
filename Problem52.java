@@ -21,6 +21,8 @@ public class Problem52 extends ConsoleProgram{
 			rd.close();
 		}catch(FileNotFoundException e){
 			e.printStackTrace();
+			
+			println("file not found");
 		}catch(IOException e){
 			e.printStackTrace();
 		}
