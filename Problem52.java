@@ -9,7 +9,7 @@ public class Problem52 extends ConsoleProgram{
 	
 	public void run(){
 		try{
-			BufferedReader rd = new BufferedReader(new FileReader("C:\Users\maria\OneDrive\Documents\UNI\for_everybody\PracticeProject\Problem52.java"));
+			BufferedReader rd = new BufferedReader(new FileReader("C:/Users/maria/OneDrive/Documents/UNI/for_everybody/PracticeProject/Problem52.java"));
 			
 			while(true){
 				String line = rd.readLine();
