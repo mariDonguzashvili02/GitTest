@@ -22,7 +22,7 @@ public class Problem29 extends ConsoleProgram {
 		int f1 = 1;
 		int f2 = 0;
 
-		while (n > 0) {
+		while (n >= 2) {
 			f = f1 + f2;
 			f2 = f1;
 			f1 = f;
