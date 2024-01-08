@@ -6,7 +6,7 @@ public class nothing extends ConsoleProgram {
 	public void run(){
 		String line = "Barbara 143 85 18 3 3 6 22 73 153 296 511";
 		NameSurferEntry(line);
-		println(name);
+		print(name);
 		for(int i = 0; i < ranks.length; i++){
 			print(" " + ranks[i]);
 		}
