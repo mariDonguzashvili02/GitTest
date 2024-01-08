@@ -15,7 +15,7 @@ public class nothing extends ConsoleProgram {
 	private void NameSurferEntry(String line) {
 		String[] statistics = line.split(" ");
 		name = statistics[0];
-		ranks = intConverter(statistics, 1);
+		ranks = intConverter(statistics, 0);
 
 	}
 	
