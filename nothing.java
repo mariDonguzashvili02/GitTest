@@ -1,8 +1,9 @@
 import java.util.HashMap;
 
 import acm.program.ConsoleProgram;
+import acm.program.Program;
 
-public class nothing extends ConsoleProgram {
+public class nothing extends Program {
 	private HashMap<String, nothing> statistics = new HashMap<String, nothing>();
 
 	private String name;
