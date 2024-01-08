@@ -24,7 +24,7 @@ public class nothing extends ConsoleProgram {
 		int n = 0;
 		for (int i = index; i < arr.length; i++) {
 			converted[n] = Integer.parseInt(arr[i]);
-			if(n == i - 1){
+			if(n == i){
 				break;
 			}
 			n++;
