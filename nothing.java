@@ -4,7 +4,7 @@ import acm.program.ConsoleProgram;
 import acm.program.Program;
 
 public class nothing extends Program {
-	private HashMap<String, nothing> statistics = new HashMap<String, nothing>();
+	//private HashMap<String, nothing> statistics = new HashMap<String, nothing>();
 
 	private String name;
 	private int[] ranks;
