@@ -3,19 +3,16 @@ import java.util.HashMap;
 import acm.program.ConsoleProgram;
 import acm.program.Program;
 
-public class nothing extends Program {
+public class nothing extends ConsoleProgram {
 	//private HashMap<String, nothing> statistics = new HashMap<String, nothing>();
 
 	private String name;
 	private int[] ranks;
 	public void run(){
 		String line = "Barbara 143 85 18 3 3 6 22 73 153 296 511";
-		nothing line1 = new nothing(line);
-		//statistics.put(line1.getName(), line1);
-		print(line1.toString());
-//		for(int i = 0; i < ranks.length; i++){
-//			print(" " + ranks[i]);
-//		}
+		nothing(line);
+		String entry = toStrings();
+		print(entry);
 	}
 	
 	public String getName() {
@@ -30,7 +27,7 @@ public class nothing extends Program {
 //		return null;
 //	}
 	
-	public String toString() {
+	private String toStrings() {
 		String line = name + "[" + ranks[0];
 		for(int i = 1; i < ranks.length; i++){
 			line += " " + ranks[i];
@@ -39,7 +36,7 @@ public class nothing extends Program {
 		return line;
 	}
 
-	public nothing(String line) {
+	private void nothing(String line) {
 		String[] statistics = line.split(" ");
 		name = statistics[0];
 		ranks = intConverter(statistics, 1);
