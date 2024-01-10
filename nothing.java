@@ -13,9 +13,9 @@ public class nothing extends Program {
 		nothing line1 = new nothing(line);
 		statistics.put(line1.getName(), line1);
 		print(line1.toString());
-		for(int i = 0; i < ranks.length; i++){
-			print(" " + ranks[i]);
-		}
+//		for(int i = 0; i < ranks.length; i++){
+//			print(" " + ranks[i]);
+//		}
 	}
 	
 	public String getName() {
