@@ -23,12 +23,12 @@ public class nothing extends Program {
 		return name;
 	}
 	
-	public nothing findEntry(String name) {
-		if(statistics.containsKey(name)){
-			return statistics.get(name);
-		}
-		return null;
-	}
+//	public nothing findEntry(String name) {
+//		if(statistics.containsKey(name)){
+//			return statistics.get(name);
+//		}
+//		return null;
+//	}
 	
 	public String toString() {
 		String line = name + "[" + ranks[0];
