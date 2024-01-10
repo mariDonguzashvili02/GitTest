@@ -28,7 +28,7 @@ public class nothing extends ConsoleProgram {
 //	}
 	
 	private String toStrings() {
-		String line = name + "[" + ranks[0];
+		String line = name + " " + "[" + ranks[0];
 		for(int i = 1; i < ranks.length; i++){
 			line += " " + ranks[i];
 		}
