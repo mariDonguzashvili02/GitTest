@@ -15,17 +15,7 @@ public class nothing extends ConsoleProgram {
 		print(entry);
 	}
 	
-	public String getName() {
-
-		return name;
-	}
 	
-//	public nothing findEntry(String name) {
-//		if(statistics.containsKey(name)){
-//			return statistics.get(name);
-//		}
-//		return null;
-//	}
 	
 	private String toStrings() {
 		String line = name + " " + "[" + ranks[0];
@@ -44,7 +34,7 @@ public class nothing extends ConsoleProgram {
 	}
 	
 	private int[] intConverter(String[] arr, int index) {
-		int[] converted = new int[arr.length];
+		int[] converted = new int[arr.length - index];
 		int n = 0;
 		for (int i = index; i < arr.length; i++) {
 			converted[n] = Integer.parseInt(arr[i]);
