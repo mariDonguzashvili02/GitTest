@@ -11,7 +11,7 @@ public class nothing extends Program {
 	public void run(){
 		String line = "Barbara 143 85 18 3 3 6 22 73 153 296 511";
 		nothing line1 = new nothing(line);
-		statistics.put(line1.getName(), line1);
+		//statistics.put(line1.getName(), line1);
 		print(line1.toString());
 //		for(int i = 0; i < ranks.length; i++){
 //			print(" " + ranks[i]);
