@@ -27,7 +27,7 @@ public class Problem58 extends ConsoleProgram{
 			return false;
 		}
 		
-		for(int i = 0; i < rows*columns; i++){
+		for(int i = 1; i < rows*columns; i++){
 			if(!containsNumber(matrix, i)){
 				return false;
 			}
