@@ -22,8 +22,8 @@ public class Problem56 extends ConsoleProgram{
 		int[] sorted = new int[numbers.length];
 		int j = 0;
 		for(int i = 1; i < numbers.length; i++){
-			if(numbers[i - 1] < numbers[i]){
-				sorted[j] = numbers[i];
+			if(numbers[j] < numbers[i]){
+				sorted[j] = numbers[i - 1];
 				j++;
 			}
 			
