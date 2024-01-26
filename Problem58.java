@@ -10,7 +10,7 @@ public class Problem58 extends ConsoleProgram{
 		int[][] test = {
 				{1, 2, 3},
 				{5, 6, 7},
-				{8, 9, 10}};
+				{8, 9, 4}};
 		
 		if(magicMatrix(test)){
 			println("true");
