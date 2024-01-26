@@ -33,7 +33,7 @@ public class Problem58 extends ConsoleProgram{
 			}
 		}
 		
-		return false;
+		return true;
 	}
 	
 	private boolean containsNumber(int[][] matrix, int n){
