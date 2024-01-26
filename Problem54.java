@@ -36,6 +36,7 @@ public class Problem54 extends ConsoleProgram{
 		for(int i = 0; i < array.length; i++){
 			if(array[i] != n){
 				filtered[j] = array[i];
+				j++;
 			}
 		}
 		return filtered;
