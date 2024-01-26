@@ -32,9 +32,10 @@ public class Problem54 extends ConsoleProgram{
 	
 	private int[] elementDeleter(int[] array, int n){
 		int[] filtered = new int[array.length - 1];
+		int j = 0;
 		for(int i = 0; i < array.length; i++){
 			if(array[i] != n){
-				filtered[i] = array[i];
+				filtered[j] = array[i];
 			}
 		}
 		return filtered;
