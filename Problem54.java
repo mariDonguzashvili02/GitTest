@@ -10,8 +10,8 @@ public class Problem54 extends ConsoleProgram{
 			int m = readInt("Enter number: ");
 			numbers[i] = m;
 		}
-		
-		println("Max numbers are: " + findMax(numbers) + " , " + findMax(elementDeleter(numbers, findMax(numbers))));
+		int[] filtered = elementDeleter(numbers, findMax(numbers));
+		println("Max numbers are: " + findMax(numbers) + " , " + findMax(filtered));
 		
 		
 	}
