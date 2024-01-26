@@ -23,7 +23,7 @@ public class Problem56 extends ConsoleProgram{
 		int j = 0;
 		for(int i = 1; i < numbers.length; i++){
 			if(numbers[j] < numbers[i]){
-				sorted[j] = numbers[i - 1];
+				sorted[j] = numbers[j];
 				j++;
 			}
 			
