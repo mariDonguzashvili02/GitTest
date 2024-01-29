@@ -9,6 +9,7 @@ public class Problem60 extends ConsoleProgram{
 	public void run(){
 		ArrayList<Integer> numbers = new ArrayList<Integer>();
 		int number = numberDisplayer();
+		numbers.add(number);
 		while(true){
 			number = readInt("?");
 			if(number == SPECIAL_SYMBOL){
