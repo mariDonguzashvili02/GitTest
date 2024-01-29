@@ -6,7 +6,7 @@ import acm.program.ConsoleProgram;
 //სახელი და მის გასწვრივ რაოდენობა რამდენჯერ შევიყვანეთ ეს სახელი.
 
 public class Problem62 extends ConsoleProgram{
-	private static String SPECIAL_SYMBOL = "";
+	private static String SPECIAL_SYMBOL = " ";
 	HashMap<String, Integer> statistics = new HashMap<String, Integer>();
 
 	public void run(){
