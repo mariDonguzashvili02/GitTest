@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 import java.util.HashMap;
-
 import acm.program.ConsoleProgram;
 //62. კონსოლიდან შეგვყავს სახელები, მანამ სანამ არ შევიყვანთ ცარიელ სტრინგს. დაბეჭდეთ
 //სახელი და მის გასწვრივ რაოდენობა რამდენჯერ შევიყვანეთ ეს სახელი.
@@ -11,10 +10,9 @@ public class Problem62 extends ConsoleProgram{
 
 	public void run(){
 		ArrayList<String> names = new ArrayList<String>();
-		String name = nameDisplayer();
-		names.add(name);
+		
 		while(true){
-			name = readLine("?");
+			String name = readLine("Enter name");
 			if(name.equals(SPECIAL_SYMBOL)){
 				break;
 			}
