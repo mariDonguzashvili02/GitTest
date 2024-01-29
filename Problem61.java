@@ -14,7 +14,7 @@ public class Problem61 extends ConsoleProgram{
 		}
 		
 		for(int i = 0 ; i < n ; i++ ){
-			for(int j = 1; j < n; j++ ){
+			for(int j = i + 1; j < n; j++ ){
 				if(numbers[i] + numbers[j] == m){
 					println(numbers[i]);
 					println(numbers[j]);
