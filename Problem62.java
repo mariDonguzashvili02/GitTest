@@ -12,7 +12,7 @@ public class Problem62 extends ConsoleProgram{
 		ArrayList<String> names = new ArrayList<String>();
 		
 		while(true){
-			String name = readLine("Enter name");
+			String name = readLine("Enter name: ");
 			if(name.equals(SPECIAL_SYMBOL)){
 				break;
 			}
