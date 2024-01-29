@@ -15,7 +15,7 @@ public class Problem62 extends ConsoleProgram{
 		names.add(name);
 		while(true){
 			name = readLine("?");
-			if(name == SPECIAL_SYMBOL){
+			if(name.equals(SPECIAL_SYMBOL)){
 				break;
 			}
 			names.add(name);
@@ -61,7 +61,7 @@ public class Problem62 extends ConsoleProgram{
 	
 	private String nameDisplayer() {
 		String m = readLine("?");
-		while (m == SPECIAL_SYMBOL) {
+		while (m.equals(SPECIAL_SYMBOL)) {
 			println("You need to enter the number first, not special symbol!");
 			m = readLine("?");
 		}
