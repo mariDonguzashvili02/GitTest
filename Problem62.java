@@ -25,7 +25,6 @@ public class Problem62 extends ConsoleProgram{
 			println(statistics.get(names.get(i)));
 		}
 		
-		
 	}
 	
 	
@@ -55,14 +54,5 @@ public class Problem62 extends ConsoleProgram{
 		
 	}
 	
-	
-	
-	private String nameDisplayer() {
-		String m = readLine("?");
-		while (m.equals(SPECIAL_SYMBOL)) {
-			println("You need to enter the number first, not special symbol!");
-			m = readLine("?");
-		}
-		return m;
-	}
+
 }
