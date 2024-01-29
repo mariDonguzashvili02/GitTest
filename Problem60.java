@@ -16,7 +16,7 @@ public class Problem60 extends ConsoleProgram{
 			}
 			numbers.add(number);
 		}
-		for(int i = numbers.size() - 1; i >= 0 ; i++){
+		for(int i = numbers.size() - 1; i >= 0 ; i--){
 			println(numbers.get(i));
 		}
 		
